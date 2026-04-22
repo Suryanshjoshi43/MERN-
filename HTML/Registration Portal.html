@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Portal</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Student Registration Portal</h1>
+    <p>HTML Forms and Tables Practice</p>
+  </header>
+
+  <hr>
+
+  <!-- FORM -->
+  <section>
+    <h2>Register a New Student</h2>
+
+    <form action="/register" method="POST">
+
+      <!-- Full Name -->
+      <label for="fullname">Full Name</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <!-- Password -->
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+      <!-- Age -->
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age" min="15" max="60" placeholder="Enter age"><br><br>
+
+      <!-- DOB -->
+      <label for="dob">Date of Birth</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <!-- Phone -->
+      <label for="phone">Phone</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="Enter phone number"><br><br>
+
+      <!-- Gender -->
+      <label>Gender</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      <br><br>
+
+      <!-- Courses -->
+      <label>Courses</label><br>
+      <input type="checkbox" id="html" name="courses" value="html">
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="courses" value="css">
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="js" name="courses" value="javascript">
+      <label for="js">JavaScript</label>
+
+      <input type="checkbox" id="react" name="courses" value="react">
+      <label for="react">React</label>
+      <br><br>
+
+      <!-- File -->
+      <label for="photo">Upload Photo</label><br>
+      <input type="file" id="photo" name="photo"><br><br>
+
+      <!-- Address -->
+      <label for="address">Address</label><br>
+      <textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea><br><br>
+
+      <!-- Buttons -->
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- TABLE -->
+  <section>
+    <h2>Registered Students</h2>
+
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Courses</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>001</td>
+        <td>Suryansh Joshi</td>
+        <td>suryansh@email.com</td>
+        <td>20</td>
+        <td>Male</td>
+        <td>HTML, CSS, JavaScript</td>
+        <td>Active</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Priya Sharma</td>
+        <td>priya@email.com</td>
+        <td>22</td>
+        <td>Female</td>
+        <td>HTML, CSS</td>
+        <td>Active</td>
+      </tr>
+
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Student Portal | HTML Only</p>
+  </footer>
+
+</body>
+</html>
